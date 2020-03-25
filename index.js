@@ -640,7 +640,7 @@ function time(){
                     }
             }
             if(lundi[6]!= "aucun"){
-                if (horaire==="14:30"){
+                if (horaire=="14:36"){
                     msg_channel.send(`@everyone cours de ` + lundi[6] + " dans 30 min !!!");
                     }
             }
