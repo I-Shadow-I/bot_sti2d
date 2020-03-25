@@ -554,7 +554,7 @@ function time(){
       .addField("__vendredi__","**8h** : " + vendredi[0] + " / " + "**9h** : " + vendredi[1] + " / " + "**10h** : " + vendredi[2] + " / " + "**11h** : " + vendredi[3] + " / " + "**13h** : " + vendredi[4] + " / " + "**14h** : " + vendredi[5] + " / " + "**15h** : " + vendredi[6] + " / " + "**16h** : " + vendredi[7] + " / " + "**17h** : " + vendredi[8]);
     // Send the embed to the same channel as the message
     msg_channel.send(embed);
-        msg_channel.send("@here");
+        msg_channel.send("@everyone");
     }
 
     if((day=== 'vendredi')&&(horaire === "18:30")){
