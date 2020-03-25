@@ -6,10 +6,10 @@ var prefix = "/";
 var heure = "";
 var matière ="";
 let lundi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"]
-let mardi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"]
+let mardi = ["aucun","aucun","aucun","aucun","aucun","aucun","Anglais-G1","aucun","aucun"]
 let mercredi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"]
-let jeudi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"]
-let vendredi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"]
+let jeudi = ["aucun","aucun","aucun","aucun","aucun","aucun","Anglais-G1","aucun","aucun"]
+let vendredi = ["aucun","aucun","aucun","ETT","aucun","aucun","aucun","aucun","aucun"]
 var semaine = 0;
 var horaire ="";
 var day;
@@ -576,7 +576,7 @@ function time(){
             mardi[3] = "aucun";
             mardi[4] = "aucun";
             mardi[5] = "aucun";
-            mardi[6] = "aucun";
+            mardi[6] = "Anglais-G1";
             mardi[7] = "aucun";
             mardi[8] = "aucun";
 
@@ -586,7 +586,7 @@ function time(){
             jeudi[3] = "aucun";
             jeudi[4] = "aucun";
             jeudi[5] = "aucun";
-            jeudi[6] = "aucun";
+            jeudi[6] = "Anglais-G1";
             jeudi[7] = "aucun";
             jeudi[8] = "aucun";
 
