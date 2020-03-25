@@ -530,6 +530,11 @@ function time(){
     var msg_channel = client.channels.cache.get("692067052831113260");
     
     if(horaire ==="18:30"){
+        
+        msg_channel.bulkDelete(100);
+        msg_channel.bulkDelete(100); 
+        msg_channel.bulkDelete(100); 
+        
         const embed = new MessageEmbed()
       // Set the title of the field
       .setTitle('Agenda TSTI2D')
@@ -553,6 +558,8 @@ function time(){
     }
 
     if((day=== 'vendredi')&&(horaire === "18:30")){
+        
+
         lundi[0] = "aucun";
             lundi[1] = "aucun";
             lundi[2] = "aucun";
