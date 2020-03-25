@@ -611,47 +611,47 @@ function time(){
         
             if(lundi[0]!= "aucun"){
                 if (horaire="07:30"){
-                msg_channel.send(`@here cours de ` + lundi[0] + " dans 30 min !!!");
+                msg_channel.send(`@everyone cours de ` + lundi[0] + " dans 30 min !!!");
                 }
             }
             if(lundi[1]!= "aucun"){
                 if (horaire="08:30"){
-                    msg_channel.send(`@here cours de ` + lundi[1] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + lundi[1] + " dans 30 min !!!");
                     }
             }
             if(lundi[2]!= "aucun"){
                 if (horaire="09:30"){
-                    msg_channel.send(`@here cours de ` + lundi[2] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + lundi[2] + " dans 30 min !!!");
                     }
             }
             if(lundi[3]!= "aucun"){
                 if (horaire="10:30"){
-                    msg_channel.send(`@here cours de ` + lundi[3] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + lundi[3] + " dans 30 min !!!");
                     }
             }
             if(lundi[4]!= "aucun"){
                 if (horaire="12:30"){
-                    msg_channel.send(`@here cours de ` + lundi[4] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + lundi[4] + " dans 30 min !!!");
                     }
             }
             if(lundi[5]!= "aucun"){
                 if (horaire="13:30"){
-                    msg_channel.send(`@here cours de ` + lundi[5] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + lundi[5] + " dans 30 min !!!");
                     }
             }
             if(lundi[6]!= "aucun"){
                 if (horaire="14:30"){
-                    msg_channel.send(`@here cours de ` + lundi[6] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + lundi[6] + " dans 30 min !!!");
                     }
             }
             if(lundi[7]!= "aucun"){
                 if (horaire="15:30"){
-                    msg_channel.send(`@here cours de ` + lundi[7] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + lundi[7] + " dans 30 min !!!");
                     }
             }
             if(lundi[8]!= "aucun"){
                 if (horaire="16:30"){
-                    msg_channel.send(`@here cours de ` + lundi[8] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + lundi[8] + " dans 30 min !!!");
                     }
             }
             console.log("ok1");
@@ -663,47 +663,47 @@ function time(){
         
             if(mardi[0]!= "aucun"){
                 if (horaire="07:30"){
-                    msg_channel.send(`@here cours de ` + mardi[0] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mardi[0] + " dans 30 min !!!");
                     }
             }
             if(mardi[1]!= "aucun"){
                 if (horaire="08:30"){
-                    msg_channel.send(`@here cours de ` + mardi[1] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mardi[1] + " dans 30 min !!!");
                     }
             }
             if(mardi[2]!= "aucun"){
                 if (horaire="09:30"){
-                    msg_channel.send(`@here cours de ` + mardi[2] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mardi[2] + " dans 30 min !!!");
                     }
             }
             if(mardi[3]!= "aucun"){
                 if (horaire="10:30"){
-                    msg_channel.send(`@here cours de ` + mardi[3] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mardi[3] + " dans 30 min !!!");
                     }
             }
             if(mardi[4]!= "aucun"){
                 if (horaire="12:30"){
-                    msg_channel.send(`@here cours de ` + mardi[4] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mardi[4] + " dans 30 min !!!");
                     }
             }
             if(mardi[5]!= "aucun"){
                 if (horaire="13:30"){
-                    msg_channel.send(`@here cours de ` + mardi[5] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mardi[5] + " dans 30 min !!!");
                     }
             }
             if(mardi[6]!= "aucun"){
                 if (horaire="14:30"){
-                    msg_channel.send(`@here cours de ` + mardi[6] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mardi[6] + " dans 30 min !!!");
                     }
             }
             if(mardi[7]!= "aucun"){
                 if (horaire="15:30"){
-                    msg_channel.send(`@here cours de ` + mardi[7] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mardi[7] + " dans 30 min !!!");
                     }
             }
             if(mardi[8]!= "aucun"){
                 if (horaire="16:30"){
-                    msg_channel.send(`@here cours de ` + mardi[8] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mardi[8] + " dans 30 min !!!");
                     }
             }
             console.log("ok2");
@@ -715,47 +715,47 @@ function time(){
         
             if(mercredi[0]!= "aucun"){
                 if (horaire="07:30"){
-                msg_channel.send(`@here cours de ` + mercredi[0] + " dans 30 min !!!");
+                msg_channel.send(`@everyone cours de ` + mercredi[0] + " dans 30 min !!!");
                 }
             }
             if(mercredi[1]!= "aucun"){
                 if (horaire="08:30"){
-                    msg_channel.send(`@here cours de ` + mercredi[1] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mercredi[1] + " dans 30 min !!!");
                     }
             }
             if(mercredi[2]!= "aucun"){
                 if (horaire="09:30"){
-                    msg_channel.send(`@here cours de ` + mercredi[2] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mercredi[2] + " dans 30 min !!!");
                     }
             }
             if(mercredi[3]!= "aucun"){
                 if (horaire="10:30"){
-                    msg_channel.send(`@here cours de ` + mercredi[3] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mercredi[3] + " dans 30 min !!!");
                     }
             }
             if(mercredi[4]!= "aucun"){
                 if (horaire="12:30"){
-                    msg_channel.send(`@here cours de ` + mercredi[4] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mercredi[4] + " dans 30 min !!!");
                     }
             }
             if(mercredi[5]!= "aucun"){
                 if (horaire="13:30"){
-                    msg_channel.send(`@here cours de ` + mercredi[5] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mercredi[5] + " dans 30 min !!!");
                     }
             }
             if(mercredi[6]!= "aucun"){
                 if (horaire="14:30"){
-                    msg_channel.send(`@here cours de ` + mercredi[6] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mercredi[6] + " dans 30 min !!!");
                     }
             }
             if(mercredi[7]!= "aucun"){
                 if (horaire="15:30"){
-                    msg_channel.send(`@here cours de ` + mercredi[7] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mercredi[7] + " dans 30 min !!!");
                     }
             }
             if(mercredi[8]!= "aucun"){
                 if (horaire="16:30"){
-                    msg_channel.send(`@here cours de ` + mercredi[8] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + mercredi[8] + " dans 30 min !!!");
                     }
             }
             console.log("ok3");
@@ -767,47 +767,47 @@ function time(){
         
             if(jeudi[0]!= "aucun"){
                 if (horaire="07:30"){
-                msg_channel.send(`@here cours de ` + jeudi[0] + " dans 30 min !!!");
+                msg_channel.send(`@everyone cours de ` + jeudi[0] + " dans 30 min !!!");
                 }
             }
             if(jeudi[1]!= "aucun"){
                 if (horaire="08:30"){
-                    msg_channel.send(`@here cours de ` + jeudi[1] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + jeudi[1] + " dans 30 min !!!");
                     }
             }
             if(jeudi[2]!= `@here cours de `){
                 if (horaire="09:30"){
-                    msg_channel.send(`@here cours de ` + jeudi[2] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + jeudi[2] + " dans 30 min !!!");
                     }
             }
             if(jeudi[3]!= "aucun"){
                 if (horaire="10:30"){
-                    msg_channel.send(`@here cours de ` + jeudi[3] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + jeudi[3] + " dans 30 min !!!");
                     }
             }
             if(jeudi[4]!= "aucun"){
                 if (horaire="12:30"){
-                    msg_channel.send(`@here cours de ` + jeudi[4] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + jeudi[4] + " dans 30 min !!!");
                     }
             }
             if(jeudi[5]!= "aucun"){
                 if (horaire="13:30"){
-                    msg_channel.send(`@here cours de ` + jeudi[5] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + jeudi[5] + " dans 30 min !!!");
                     }
             }
             if(jeudi[6]!= "aucun"){
                 if (horaire="14:30"){
-                    msg_channel.send(`@here cours de ` + jeudi[6] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + jeudi[6] + " dans 30 min !!!");
                     }
             }
             if(jeudi[7]!= "aucun"){
                 if (horaire="15:30"){
-                    msg_channel.send(`@here cours de ` + jeudi[7] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + jeudi[7] + " dans 30 min !!!");
                     }
             }
             if(jeudi[8]!= "aucun"){
                 if (horaire="16:30"){
-                    msg_channel.send(`@here cours de ` + jeudi[8] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + jeudi[8] + " dans 30 min !!!");
                     }
             }
             console.log("ok4");
@@ -819,47 +819,47 @@ function time(){
         
             if(vendredi[0]!= "aucun"){
                 if (horaire="07:30"){
-                msg_channel.send(`@here cours de ` + vendredi[0] + " dans 30 min !!!");
+                msg_channel.send(`@everyone cours de ` + vendredi[0] + " dans 30 min !!!");
                 }
             }
             if(vendredi[1]!= "aucun"){
                 if (horaire="08:30"){
-                    msg_channel.send(`@here cours de ` + vendredi[1] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + vendredi[1] + " dans 30 min !!!");
                     }
             }
             if(vendredi[2]!= "aucun"){
                 if (horaire="09:30"){
-                    msg_channel.send(`@here cours de ` + vendredi[2] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + vendredi[2] + " dans 30 min !!!");
                     }
             }
             if(vendredi[3]!= "aucun"){
                 if (horaire="10:30"){
-                    msg_channel.send(`@here cours de ` + vendredi[3] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + vendredi[3] + " dans 30 min !!!");
                     }
             }
             if(vendredi[4]!= "aucun"){
                 if (horaire="12:30"){
-                    msg_channel.send(`@here cours de ` + vendredi[4] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + vendredi[4] + " dans 30 min !!!");
                     }
             }
             if(vendredi[5]!= "aucun"){
                 if (horaire="13:30"){
-                    msg_channel.send(`@here cours de ` + vendredi[5] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + vendredi[5] + " dans 30 min !!!");
                     }
             }
             if(vendredi[6]!= "aucun"){
                 if (horaire="14:30"){
-                    msg_channel.send(`@here cours de ` + vendredi[6] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + vendredi[6] + " dans 30 min !!!");
                     }
             }
             if(vendredi[7]!= "aucun"){
                 if (horaire="15:30"){
-                    msg_channel.send(`@here cours de ` + vendredi[7] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + vendredi[7] + " dans 30 min !!!");
                     }
             }
             if(vendredi[8]!= "aucun"){
                 if (horaire="16:30"){
-                    msg_channel.send(`@here cours de ` + vendredi[8] + " dans 30 min !!!");
+                    msg_channel.send(`@everyone cours de ` + vendredi[8] + " dans 30 min !!!");
                     }
             }
             console.log("ok5");
