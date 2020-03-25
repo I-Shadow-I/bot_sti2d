@@ -528,6 +528,29 @@ function time(){
     console.log(day+ ' / ' + h + ':' + m);
 
     var msg_channel = client.channels.cache.get("691652470996336731");
+    
+    if(horaire =="18:30"){
+        const embed = new MessageEmbed()
+      // Set the title of the field
+      .setTitle('Agenda TSTI2D')
+      // Set the color of the embed
+      .setColor('#00e4ff')
+      // Set the main content of the embed
+      .setDescription('Voici votre emploi du temps!')
+      .addField("----------------------------",".")
+      .addField("__Lundi__","**8h** : " + lundi[0] + " / " + "**9h** : " + lundi[1] + " / " + "**10h** : " + lundi[2] + " / " + "**11h** : " + lundi[3] + " / " + "**13h** : " + lundi[4] + " / " + "**14h** : " + lundi[5] + " / " + "**15h** : " + lundi[6] + " / " + "**16h** : " + lundi[7] + " / " + "**17h** : " + lundi[8])
+      .addField("----------------------------",".")
+      .addField("__Mardi__","**8h** : " + mardi[0] + " / " + "**9h** : " + mardi[1] + " / " + "**10h** : " + mardi[2] + " / " + "**11h** : " + mardi[3] + " / " + "**13h** : " + mardi[4] + " / " + "**14h** : " + mardi[5] + " / " + "**15h** : " + mardi[6] + " / " + "**16h** : " + mardi[7] + " / " + "**17h** : " + mardi[8])
+      .addField("----------------------------",".")
+      .addField("__Mercredi__","**8h** : " + mercredi[0] + " / " + "**9h** : " + mercredi[1] + " / " + "**10h** : " + mercredi[2] + " / " + "**11h** : " + mercredi[3] + " / " + "**13h** : " + mercredi[4] + " / " + "**14h** : " + mercredi[5] + " / " + "**15h** : " + mercredi[6] + " / " + "**16h** : " + mercredi[7] + " / " + "**17h** : " + mercredi[8])
+      .addField("----------------------------",".")
+      .addField("__Jeudi__","**8h** : " + jeudi[0] + " / " + "**9h** : " + jeudi[1] + " / " + "**10h** : " + jeudi[2] + " / " + "**11h** : " + jeudi[3] + " / " + "**13h** : " + jeudi[4] + " / " + "**14h** : " + jeudi[5] + " / " + "**15h** : " + jeudi[6] + " / " + "**16h** : " + jeudi[7] + " / " + "**17h** : " + jeudi[8])
+      .addField("----------------------------",".")
+      .addField("__vendredi__","**8h** : " + vendredi[0] + " / " + "**9h** : " + vendredi[1] + " / " + "**10h** : " + vendredi[2] + " / " + "**11h** : " + vendredi[3] + " / " + "**13h** : " + vendredi[4] + " / " + "**14h** : " + vendredi[5] + " / " + "**15h** : " + vendredi[6] + " / " + "**16h** : " + vendredi[7] + " / " + "**17h** : " + vendredi[8]);
+    // Send the embed to the same channel as the message
+    msg_channel.send(embed);
+        msg_channel.send("@here");
+    }
 
     if((day== 'vendredi')&&(horaire == "18:30")){
         lundi[0] = "aucun";
