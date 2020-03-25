@@ -16,7 +16,7 @@ var day;
 
 
 
-client.login(process.env.TOKEN);
+client.login(process.env.BOT_TOKEN);
 
 client.on("ready", ()=>{
     console.log("The bot is ready !");
