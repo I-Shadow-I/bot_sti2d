@@ -519,7 +519,7 @@ function time(){
 
     var today = new Date();
 
-    var h = today.getHours();
+    var h = today.getUTCHours() + 1;
     var m = today.getMinutes();
     var d = today.getDay() - 1;
     var j = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"];
@@ -641,7 +641,7 @@ function time(){
                     }
             }
             if(lundi[6]!= "aucun"){
-                if (horaire=="14:36"){
+                if (horaire=="14:30"){
                     msg_channel.send(`@everyone cours de ` + lundi[6] + " dans 30 min !!!");
                     }
             }
@@ -745,7 +745,7 @@ function time(){
                     }
             }
             if(mercredi[6]!= "aucun"){
-                if (horaire==="14:30"){
+                if (horaire==="14:55"){
                     msg_channel.send(`@everyone cours de ` + mercredi[6] + " dans 30 min !!!");
                     }
             }
