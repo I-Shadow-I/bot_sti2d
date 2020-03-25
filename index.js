@@ -451,7 +451,7 @@ client.on("message", message =>{
       .addField("<matière>","Mettre la matière du cours sans espace s'il y en a (physique chimique -> physique-chimique).")
       .addField("Exemple :","!lundi 8 Math  // pour une séance de 8h à 9h de math le lundi (ne pas oublier les espaces entre <jour> et <heure de debut> et entre <heure de debut> et <matiere>.")
       .addField("Voir l'agenda :","!see")
-      .addField("info :","En cas d'erreur de cours refaire la commande avec le mot `aucun` à la place de la matière (ex: !lundi 8 aucun). L'agenda est automatiquement le vendredi soir à 18h00, donc possible de remplir l'agenda de la semaine suivante le vendredi soir.")
+      .addField("info :","En cas d'erreur de cours refaire la commande avec le mot `aucun` à la place de la matière (ex: !lundi 8 aucun). L'agenda est automatiquement renitialisé le vendredi soir à 18h00, donc possible de remplir l'agenda de la semaine suivante le vendredi soir.")
       .addField("Question/aide :","Pour toutes demandes (ajouts, idées, erreurs ...) merci de contacter Cossalter Etienne#8773.")
       .setFooter("Created by Cossalter Etienne#8773")
       
