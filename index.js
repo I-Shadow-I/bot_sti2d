@@ -782,7 +782,7 @@ function time(){
                     msg_channel.send(`@everyone cours de ` + jeudi[1] + " dans 30 min !!!");
                     }
             }
-            if(jeudi[2]!= `@here cours de `){
+            if(jeudi[2]!= "aucun"){
                 if (horaire==="9:30"){
                     msg_channel.send(`@everyone cours de ` + jeudi[2] + " dans 30 min !!!");
                     }
