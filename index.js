@@ -600,7 +600,7 @@ function time(){
         msg_channel.send("@everyone mise à jour de l'agenda !");
     }
     
-    if((day=== 'lundi')&&(horaire === "18:20)){
+    if((day=== 'lundi')&&(horaire === "18:20")){
                 
                dl = dl +1;
                           
