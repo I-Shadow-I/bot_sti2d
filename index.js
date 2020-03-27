@@ -5,10 +5,10 @@ const client = new Discord.Client();
 var prefix = "/";
 var heure = "";
 var matière ="";
-let lundi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"];
-let mardi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"];
+let lundi = ["aucun","aucun","aucun","Physique","ETT","aucun","aucun","aucun","aucun"];
+let mardi = ["aucun","aucun","aucun","ETT","aucun","aucun","Anglais-G1","aucun","aucun"];
 let mercredi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"];
-let jeudi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"];
+let jeudi = ["aucun","aucun","aucun","aucun","aucun","aucun","Anglais-G1","aucun","aucun"];
 let vendredi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"];
 
 let datelundi = ["23/03/2020","30/03/2020","06/04/2020","13/04/2020","20/04/2020","27/04/2020","04/05/2020","11/05/2020","18/05/2020","25/05/2020"];
@@ -21,7 +21,7 @@ var dl = 1;
 var dma = 1;
 var dme = 1;
 var dj = 1;
-var dv = 0;
+var dv = 1;
 
 var semaine = 0;
 var horaire ="";
@@ -597,7 +597,7 @@ function time(){
       .addField("__vendredi__ " + datevendredi[dv],"**8h** : " + vendredi[0] + " / " + "**9h** : " + vendredi[1] + " / " + "**10h** : " + vendredi[2] + " / " + "**11h** : " + vendredi[3] + " / " + "**13h** : " + vendredi[4] + " / " + "**14h** : " + vendredi[5] + " / " + "**15h** : " + vendredi[6] + " / " + "**16h** : " + vendredi[7] + " / " + "**17h** : " + vendredi[8]);
    // Send the embed to the same channel as the message
     msg_channel.send(embed);
-        msg_channel.send("@everyone mise à jour de l'agenda !");
+        msg_channel.send("@Terminale mise à jour de l'agenda !");
     }
     
     if((day=== 'lundi')&&(horaire === "18:20")){
