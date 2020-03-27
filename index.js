@@ -49,8 +49,8 @@ client.on("message", message =>{
 
     if(!message.guild) return
     if(message.author.bot) return
-    if(message.channel.id === `692066741156577401`){
-        var msg_rep = client.channels.cache.get("692066741156577401");
+    if(message.channel.id === `691652470996336731`){
+        var msg_rep = client.channels.cache.get("691652470996336731");
     	if(message.content.startsWith('!mardi')){
             var arg = message.content.split(/ +/g);
             var cmd = arg.shift().toLowerCase
@@ -570,7 +570,7 @@ function time(){
     horaire = h + ':' + m;
     console.log(day+ ' / ' + h + ':' + m);
 
-    var msg_channel = client.channels.cache.get("692067052831113260");
+    var msg_channel = client.channels.cache.get("691652470996336731");
     
     if(horaire ==="18:30"){
         
