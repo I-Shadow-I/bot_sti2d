@@ -49,8 +49,8 @@ client.on("message", message =>{
 
     if(!message.guild) return
     if(message.author.bot) return
-    if(message.channel.id === `691652470996336731`){
-        var msg_rep = client.channels.cache.get("691652470996336731");
+    if(message.channel.id === `692066741156577401`){
+        var msg_rep = client.channels.cache.get("692066741156577401");
     	if(message.content.startsWith('!mardi')){
             var arg = message.content.split(/ +/g);
             var cmd = arg.shift().toLowerCase
@@ -142,43 +142,43 @@ client.on("message", message =>{
 
             if(heure ==="10"){
                 lundi[2] = matière;
-                msg_rep.send('cours de ' + lubdi[2] + ' à 10h00, le ' + datelundi[dl]);
+                msg_rep.send('cours de ' + lundi[2] + ' à 10h00, le ' + datelundi[dl]);
                 
             }
 
             if(heure ==="11"){
                 lundi[3] = matière;
-                msg_rep.send('cours de ' + lubdi[3] + ' à 11h00, le ' + datelundi[dl]);
+                msg_rep.send('cours de ' + lundi[3] + ' à 11h00, le ' + datelundi[dl]);
                 
             }
 
             if(heure ==="13"){
                 lundi[4] = matière;
-                msg_rep.send('cours de ' + lubdi[4] + ' à 13h00, le ' + datelundi[dl]);
+                msg_rep.send('cours de ' + lundi[4] + ' à 13h00, le ' + datelundi[dl]);
                 
             }
 
             if(heure ==="14"){
                 lundi[5] = matière;
-                msg_rep.send('cours de ' + lubdi[5] + ' à 14h00, le ' + datelundi[dl]);
+                msg_rep.send('cours de ' + lundi[5] + ' à 14h00, le ' + datelundi[dl]);
                 
             }
 
             if(heure ==="15"){
                 lundi[6] = matière;
-                msg_rep.send('cours de ' + lubdi[6] + ' à 15h00, le ' + datelundi[dl]);
+                msg_rep.send('cours de ' + lundi[6] + ' à 15h00, le ' + datelundi[dl]);
                 
             }
 
             if(heure ==="16"){
                 lundi[7] = matière;
-                msg_rep.send('cours de ' + lubdi[7] + ' à 16h00, le ' + datelundi[dl]);
+                msg_rep.send('cours de ' + lundi[7] + ' à 16h00, le ' + datelundi[dl]);
                 
             }
 
             if(heure ==="17"){
                 lundi[8] = matière;
-                msg_rep.send('cours de ' + lubdi[8] + ' à 17h00, le ' + datelundi[dl]);
+                msg_rep.send('cours de ' + lundi[8] + ' à 17h00, le ' + datelundi[dl]);
                 
             }
 
@@ -570,7 +570,7 @@ function time(){
     horaire = h + ':' + m;
     console.log(day+ ' / ' + h + ':' + m);
 
-    var msg_channel = client.channels.cache.get("691652470996336731");
+    var msg_channel = client.channels.cache.get("692067052831113260");
     
     if(horaire ==="18:30"){
         
