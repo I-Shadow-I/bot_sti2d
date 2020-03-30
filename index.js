@@ -5,7 +5,7 @@ const client = new Discord.Client();
 var prefix = "/";
 var heure = "";
 var matière ="";
-let lundi = ["aucun","aucun","aucun","Physique","ETT","aucun","aucun","aucun","aucun"];
+let lundi = ["aucun","aucun","aucun","aucun","ETT","aucun","aucun","aucun","aucun"];
 let mardi = ["aucun","aucun","aucun","ETT","aucun","aucun","Anglais-G1","aucun","aucun"];
 let mercredi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"];
 let jeudi = ["aucun","aucun","aucun","aucun","aucun","aucun","Anglais-G1","aucun","aucun"];
@@ -562,7 +562,7 @@ function time(){
 
     var today = new Date();
 
-    var h = today.getUTCHours() + 1;
+    var h = today.getUTCHours() + 2;
     var m = today.getMinutes();
     var d = today.getDay() - 1;
     var j = ["lundi","mardi","mercredi","jeudi","vendredi","samedi","dimanche"];
@@ -597,7 +597,8 @@ function time(){
       .addField("__vendredi__ " + datevendredi[dv],"**8h** : " + vendredi[0] + " / " + "**9h** : " + vendredi[1] + " / " + "**10h** : " + vendredi[2] + " / " + "**11h** : " + vendredi[3] + " / " + "**13h** : " + vendredi[4] + " / " + "**14h** : " + vendredi[5] + " / " + "**15h** : " + vendredi[6] + " / " + "**16h** : " + vendredi[7] + " / " + "**17h** : " + vendredi[8]);
    // Send the embed to the same channel as the message
     msg_channel.send(embed);
-        msg_channel.send("@Terminale mise à jour de l'agenda !");
+        var mention = message.guild.roles.cache.get("689154305713897539");
+        msg_channel.send(`${mention} mise à jour de l'agenda !`);
     }
     
     if((day=== 'lundi')&&(horaire === "18:20")){
