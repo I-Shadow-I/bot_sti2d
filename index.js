@@ -6,10 +6,10 @@ var prefix = "/";
 var heure = "";
 var matière ="";
 let lundi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"];
-let mardi = ["aucun","aucun","aucun","ETT","aucun","aucun","Anglais-G1","aucun","aucun"];
+let mardi = ["aucun","aucun","aucun","aucun","aucun","aucun","Anglais-G1","aucun","aucun"];
 let mercredi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"];
 let jeudi = ["aucun","aucun","aucun","aucun","aucun","aucun","Anglais-G1","aucun","aucun"];
-let vendredi = ["aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun","aucun"];
+let vendredi = ["aucun","aucun","physique","aucun","ETT/13h30","aucun","aucun","aucun","aucun"];
 
 let datelundi = ["23/03/2020","30/03/2020","06/04/2020","13/04/2020","20/04/2020","27/04/2020","04/05/2020","11/05/2020","18/05/2020","25/05/2020"];
 let datemardi = ["24/03/2020","31/03/2020","07/04/2020","14/04/2020","21/04/2020","28/04/2020","05/05/2020","12/05/2020","19/05/2020","26/05/2020"];
@@ -18,8 +18,8 @@ let datejeudi = ["26/03/2020","02/04/2020","09/04/2020","16/04/2020","23/04/2020
 let datevendredi = ["27/03/2020","03/04/2020","10/04/2020","17/04/2020","24/04/2020","01/05/2020","08/05/2020","15/05/2020","22/05/2020","29/05/2020"];
 
 var dl = 2;
-var dma = 1;
-var dme = 1;
+var dma = 2;
+var dme = 2;
 var dj = 1;
 var dv = 1;
 
@@ -34,6 +34,8 @@ client.login(process.env.BOT_TOKEN);
 client.on("ready", ()=>{
     console.log("The bot is ready !");
     client.user.setActivity(`Agenda`)
+    var msg_on = client.channels.cache.get("694972785415684196");
+    msg_on.send('@everyone reconnecté');
 
    setInterval(()=> {
        time();
@@ -49,6 +51,70 @@ client.on("message", message =>{
 
     if(!message.guild) return
     if(message.author.bot) return
+    if(message.channel.id === `694972785415684196`){
+    var msg_rep = client.channels.cache.get("694972785415684196");
+
+    if(message.content.startsWith('!l1')){
+        dl = dl +1;
+        msg_rep.send("ok + L");
+    }
+
+    if(message.content.startsWith('!l2')){
+        dl = dl -1;
+        msg_rep.send("ok - L");
+    }
+
+
+
+    if(message.content.startsWith('!m1')){
+        dma = dma +1;
+        msg_rep.send("ok + ma");
+    }
+
+    if(message.content.startsWith('!m2')){
+        dma = dma -1;
+        msg_rep.send("ok - ma");
+    }
+
+
+
+    if(message.content.startsWith('!me1')){
+        dme = dme +1;
+        msg_rep.send("ok + me");
+    }
+
+    if(message.content.startsWith('!me2')){
+        dme = dme -1;
+        msg_rep.send("ok - me");
+    }
+
+
+
+    if(message.content.startsWith('!j1')){
+        dj = dj +1;
+        msg_rep.send("ok + J");
+    }
+
+    if(message.content.startsWith('!j2')){
+        dj = dj -1;
+        msg_rep.send("ok - J");
+    }
+
+
+
+    if(message.content.startsWith('!v1')){
+        dv = dv +1;
+        msg_rep.send("ok + V");
+    }
+
+    if(message.content.startsWith('!v2')){
+        dv = dv -1;
+        msg_rep.send("ok - V");
+    }
+
+
+
+}
     if(message.channel.id === `692066741156577401`){
         var msg_rep = client.channels.cache.get("692066741156577401");
     	if(message.content.startsWith('!mardi')){
@@ -572,6 +638,33 @@ function time(){
 
     var msg_channel = client.channels.cache.get("692067052831113260");
     
+    
+    if(horaire ==="17:50"){
+       
+  var msg_embed = client.channels.cache.get("694972785415684196");
+    
+        const embed = new MessageEmbed()
+      // Set the title of the field
+      .setTitle('Agenda TSTI2D')
+      // Set the color of the embed
+      .setColor('#00e4ff')
+      // Set the main content of the embed
+      .setDescription('Voici votre emploi du temps!')
+      .addField("----------------------------",".")
+      .addField("__Lundi__ " + datelundi[dl],"**8h** : " + lundi[0] + " / " + "**9h** : " + lundi[1] + " / " + "**10h** : " + lundi[2] + " / " + "**11h** : " + lundi[3] + " / " + "**13h** : " + lundi[4] + " / " + "**14h** : " + lundi[5] + " / " + "**15h** : " + lundi[6] + " / " + "**16h** : " + lundi[7] + " / " + "**17h** : " + lundi[8])
+      .addField("----------------------------",".")
+      .addField("__Mardi__ "+ datemardi[dma],"**8h** : " + mardi[0] + " / " + "**9h** : " + mardi[1] + " / " + "**10h** : " + mardi[2] + " / " + "**11h** : " + mardi[3] + " / " + "**13h** : " + mardi[4] + " / " + "**14h** : " + mardi[5] + " / " + "**15h** : " + mardi[6] + " / " + "**16h** : " + mardi[7] + " / " + "**17h** : " + mardi[8])
+      .addField("----------------------------",".")
+      .addField("__Mercredi__ " + datemercredi[dme],"**8h** : " + mercredi[0] + " / " + "**9h** : " + mercredi[1] + " / " + "**10h** : " + mercredi[2] + " / " + "**11h** : " + mercredi[3] + " / " + "**13h** : " + mercredi[4] + " / " + "**14h** : " + mercredi[5] + " / " + "**15h** : " + mercredi[6] + " / " + "**16h** : " + mercredi[7] + " / " + "**17h** : " + mercredi[8])
+      .addField("----------------------------",".")
+      .addField("__Jeudi__ " + datejeudi[dj],"**8h** : " + jeudi[0] + " / " + "**9h** : " + jeudi[1] + " / " + "**10h** : " + jeudi[2] + " / " + "**11h** : " + jeudi[3] + " / " + "**13h** : " + jeudi[4] + " / " + "**14h** : " + jeudi[5] + " / " + "**15h** : " + jeudi[6] + " / " + "**16h** : " + jeudi[7] + " / " + "**17h** : " + jeudi[8])
+      .addField("----------------------------",".")
+      .addField("__vendredi__ " + datevendredi[dv],"**8h** : " + vendredi[0] + " / " + "**9h** : " + vendredi[1] + " / " + "**10h** : " + vendredi[2] + " / " + "**11h** : " + vendredi[3] + " / " + "**13h** : " + vendredi[4] + " / " + "**14h** : " + vendredi[5] + " / " + "**15h** : " + vendredi[6] + " / " + "**16h** : " + vendredi[7] + " / " + "**17h** : " + vendredi[8]);
+   // Send the embed to the same channel as the message
+    msg_embed.send(embed);
+    
+       }
+
     if(horaire ==="18:30"){
         
         msg_channel.bulkDelete(100);
