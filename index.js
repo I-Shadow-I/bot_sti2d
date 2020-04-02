@@ -53,6 +53,344 @@ client.on("message", message =>{
     if(message.author.bot) return
     if(message.channel.id === `694972785415684196`){
     var msg_rep = client.channels.cache.get("694972785415684196");
+        
+        if(message.content.startsWith('!mardi')){
+            var arg = message.content.split(/ +/g);
+            var cmd = arg.shift().toLowerCase
+            console.log(arg);
+            heure = arg[0];
+            matière = arg[1];
+            console.log(heure + ' / ' + matière);
+
+            if(heure ==="8"){
+                mardi[0] = matière;
+                msg_rep.send('cours de ' + mardi[0] + ' à 8h00, le ' + datemardi[dma]);
+
+            }
+
+            if(heure ==="9"){
+                mardi[1] = matière;
+                msg_rep.send('cours de ' + mardi[1] + ' à 9h00, le ' + datemardi[dma]);
+                
+            }
+
+            if(heure ==="10"){
+                mardi[2] = matière;
+                msg_rep.send('cours de ' + mardi[2] + ' à 10h00, le ' + datemardi[dma]);
+            }
+
+            if(heure ==="11"){
+                mardi[3] = matière;
+                msg_rep.send('cours de ' + mardi[3] + ' à 11h00, le ' + datemardi[dma]);
+                
+            }
+
+            if(heure ==="13"){
+                mardi[4] = matière;
+                msg_rep.send('cours de ' + mardi[4] + ' à 13h00, le ' + datemardi[dma]);
+                
+            }
+
+            if(heure ==="14"){
+                mardi[5] = matière;
+                msg_rep.send('cours de ' + mardi[5] + ' à 14h00, le ' + datemardi[dma]);
+                
+            }
+
+            if(heure ==="15"){
+                mardi[6] = matière;
+                msg_rep.send('cours de ' + mardi[6] + ' à 15h00, le ' + datemardi[dma]);
+                
+            }
+
+            if(heure ==="16"){
+                mardi[7] = matière;
+                msg_rep.send('cours de ' + mardi[7] + ' à 16h00, le ' + datemardi[dma]);
+                
+            }
+
+            if(heure ==="17"){
+                mardi[8] = matière;
+                msg_rep.send('cours de ' + mardi[8] + ' à 17h00, le ' + datemardi[dma]);
+                
+            }
+
+            message.delete(message.author);
+            console.log(mardi);
+        }
+
+
+        //***************************************************************************************************** */
+        
+
+        if(message.content.startsWith('!lundi')){
+            var arg = message.content.split(/ +/g);
+            var cmd = arg.shift().toLowerCase
+            console.log(arg);
+            heure = arg[0];
+            matière = arg[1];
+            console.log(heure + ' / ' + matière);
+
+            if(heure ==="8"){
+                lundi[0] = matière;
+                msg_rep.send('cours de ' + lundi[0] + ' à 8h00, le ' + datelundi[dl]);
+
+            }
+
+            if(heure ==="9"){
+                lundi[1] = matière;
+                msg_rep.send('cours de ' + lundi[1] + ' à 9h00, le ' + datelundi[dl]);
+                
+            }
+
+            if(heure ==="10"){
+                lundi[2] = matière;
+                msg_rep.send('cours de ' + lundi[2] + ' à 10h00, le ' + datelundi[dl]);
+                
+            }
+
+            if(heure ==="11"){
+                lundi[3] = matière;
+                msg_rep.send('cours de ' + lundi[3] + ' à 11h00, le ' + datelundi[dl]);
+                
+            }
+
+            if(heure ==="13"){
+                lundi[4] = matière;
+                msg_rep.send('cours de ' + lundi[4] + ' à 13h00, le ' + datelundi[dl]);
+                
+            }
+
+            if(heure ==="14"){
+                lundi[5] = matière;
+                msg_rep.send('cours de ' + lundi[5] + ' à 14h00, le ' + datelundi[dl]);
+                
+            }
+
+            if(heure ==="15"){
+                lundi[6] = matière;
+                msg_rep.send('cours de ' + lundi[6] + ' à 15h00, le ' + datelundi[dl]);
+                
+            }
+
+            if(heure ==="16"){
+                lundi[7] = matière;
+                msg_rep.send('cours de ' + lundi[7] + ' à 16h00, le ' + datelundi[dl]);
+                
+            }
+
+            if(heure ==="17"){
+                lundi[8] = matière;
+                msg_rep.send('cours de ' + lundi[8] + ' à 17h00, le ' + datelundi[dl]);
+                
+            }
+
+            message.delete();
+            console.log(lundi);
+
+            
+
+        }
+        
+        //************************************************************************************************************* */
+
+
+        if(message.content.startsWith('!mercredi')){
+            var arg = message.content.split(/ +/g);
+            var cmd = arg.shift().toLowerCase
+            console.log(arg);
+            heure = arg[0];
+            matière = arg[1];
+            console.log(heure + ' / ' + matière);
+
+            if(heure ==="8"){
+                mercredi[0] = matière;
+                msg_rep.send('cours de ' + mercredi[0] + ' à 8h00, le ' + datemercredi[dme]);
+
+            }
+
+            if(heure ==="9"){
+                mercredi[1] = matière;
+                msg_rep.send('cours de ' + mercredi[1] + ' à 9h00, le ' + datemercredi[dme]);
+                
+            }
+
+            if(heure ==="10"){
+                mercredi[2] = matière;
+                msg_rep.send('cours de ' + mercredi[2] + ' à 10h00, le ' + datemercredi[dme]);
+                
+            }
+
+            if(heure ==="11"){
+                mercredi[3] = matière;
+                msg_rep.send('cours de ' + mercredi[3] + ' à 11h00, le ' + datemercredi[dme]);
+                
+            }
+
+            if(heure ==="13"){
+                mercredi[4] = matière;
+                msg_rep.send('cours de ' + mercredi[4] + ' à 13h00, le ' + datemercredi[dme]);
+                
+            }
+
+            if(heure ==="14"){
+                mercredi[5] = matière;
+                msg_rep.send('cours de ' + mercredi[5] + ' à 14h00, le ' + datemercredi[dme]);
+                
+            }
+
+            if(heure ==="15"){
+                mercredi[6] = matière;
+                msg_rep.send('cours de ' + mercredi[6] + ' à 15h00, le ' + datemercredi[dme]);
+                
+            }
+
+            if(heure ==="16"){
+                mercredi[7] = matière;
+                msg_rep.send('cours de ' + mercredi[7] + ' à 16h00, le ' + datemercredi[dme]);
+                
+            }
+
+            if(heure ==="17"){
+                mercredi[8] = matière;
+                msg_rep.send('cours de ' + mercredi[8] + ' à 17h00, le ' + datemercredi[dme]);
+                
+            }
+
+            message.delete();
+            console.log(mercredi);
+
+        }
+
+
+        //************************************************************************ */
+
+
+
+        if(message.content.startsWith('!jeudi')){
+
+            var arg = message.content.split(/ +/g);
+            var cmd = arg.shift().toLowerCase
+            console.log(arg);
+            heure = arg[0];
+            matière = arg[1];
+            console.log(heure + ' / ' + matière);
+
+            if(heure ==="8"){
+                jeudi[0] = matière;
+                msg_rep.send('cours de ' + jeudi[0] + ' à 8h00, le ' + datejeudi[dj]);
+
+            }
+
+            if(heure ==="9"){
+                jeudi[1] = matière;
+                msg_rep.send('cours de ' + jeudi[1] + ' à 9h00, le ' + datejeudi[dj]);
+                
+            }
+
+            if(heure ==="10"){
+                jeudi[2] = matière;
+                msg_rep.send('cours de ' + jeudi[2] + ' à 10h00, le ' + datejeudi[dj]);
+            }
+
+            if(heure ==="11"){
+                jeudi[3] = matière;
+                msg_rep.send('cours de ' + jeudi[3] + ' à 11h00, le ' + datejeudi[dj]);
+            }
+
+            if(heure ==="13"){
+                jeudi[4] = matière;
+                msg_rep.send('cours de ' + jeudi[4] + ' à 13h00, le ' + datejeudi[dj]);
+            }
+
+            if(heure ==="14"){
+                jeudi[5] = matière;
+                msg_rep.send('cours de ' + jeudi[5] + ' à 14h00, le ' + datejeudi[dj]);
+            }
+
+            if(heure ==="15"){
+                jeudi[6] = matière;
+                msg_rep.send('cours de ' + jeudi[6] + ' à 15h00, le ' + datejeudi[dj]);
+            }
+
+            if(heure ==="16"){
+                jeudi[7] = matière;
+                msg_rep.send('cours de ' + jeudi[7] + ' à 16h00, le ' + datejeudi[dj]);
+            }
+
+            if(heure ==="17"){
+                jeudi[8] = matière;
+                msg_rep.send('cours de ' + jeudi[8] + ' à 17h00, le ' + datejeudi[dj]);
+            }
+
+            message.delete();
+            console.log(jeudi);
+
+
+        }
+
+
+//*********************************************************************************** */
+
+
+        if(message.content.startsWith('!vendredi')){
+            var arg = message.content.split(/ +/g);
+            var cmd = arg.shift().toLowerCase
+            console.log(arg);
+            heure = arg[0];
+            matière = arg[1];
+            console.log(heure + ' / ' + matière);
+
+            if(heure ==="8"){
+                vendredi[0] = matière;
+                   msg_rep.send('cours de ' + vendredi[0] + ' à 8h00, le ' + datevendredi[dv]);
+            }
+
+            if(heure ==="9"){
+                vendredi[1] = matière;
+                msg_rep.send('cours de ' + vendredi[1] + ' à 9h00, le ' + datevendredi[dv]);
+                
+            }
+
+            if(heure ==="10"){
+                vendredi[2] = matière;
+                msg_rep.send('cours de ' + vendredi[2] + ' à 10h00, le ' + datevendredi[dv]);
+            }
+
+            if(heure ==="11"){
+                vendredi[3] = matière;
+                msg_rep.send('cours de ' + vendredi[3] + ' à 11h00, le ' + datevendredi[dv]);
+            }
+
+            if(heure ==="13"){
+                vendredi[4] = matière;
+                msg_rep.send('cours de ' + vendredi[4] + ' à 13h00, le ' + datevendredi[dv]);
+            }
+
+            if(heure ==="14"){
+                vendredi[5] = matière;
+                msg_rep.send('cours de ' + vendredi[5] + ' à 14h00, le ' + datevendredi[dv]);
+            }
+
+            if(heure ==="15"){
+                vendredi[6] = matière;
+                msg_rep.send('cours de ' + vendredi[6] + ' à 15h00, le ' + datevendredi[dv]);
+            }
+
+            if(heure ==="16"){
+                vendredi[7] = matière;
+                msg_rep.send('cours de ' + vendredi[7] + ' à 16h00, le ' + datevendredi[dv]);
+            }
+
+            if(heure ==="17"){
+                vendredi[8] = matière;
+                msg_rep.send('cours de ' + vendredi[8] + ' à 17h00, le ' + datevendredi[dv]);
+            }
+
+            message.delete();
+            console.log(vendredi);
+
+        }
 
     if(message.content.startsWith('!l1')){
         dl = dl +1;
